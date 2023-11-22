@@ -1,6 +1,10 @@
 package com.vigfoot.lockey.config;
 
-public class Interceptor {
+import org.springframework.web.context.request.async.CallableProcessingInterceptor;
+
+import java.util.logging.Handler;
+
+public class Interceptor implements CallableProcessingInterceptor {
 
 
 }
