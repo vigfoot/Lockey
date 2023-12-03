@@ -23,7 +23,7 @@ public class LockeyRouter {
     Mono<Output> responseMono(@PathVariable("method") String method
             , @PathVariable("salt") String salt
             , @PathVariable("input") String input) {
-
+        final String output = encryptionService.encode(method, salt, input);
 
         return Mono.empty();
     }
