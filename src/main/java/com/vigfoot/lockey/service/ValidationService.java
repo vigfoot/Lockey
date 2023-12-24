@@ -1,9 +1,10 @@
 package com.vigfoot.lockey.service;
 
-import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
-@Service
 public class ValidationService {
 
-
+    public static Mono<Boolean> isAllowedMethod(String methodStr) {
+        return Mono.empty();
+    }
 }
